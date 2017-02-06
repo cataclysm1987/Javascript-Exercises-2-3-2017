@@ -1,4 +1,9 @@
 
+//Test function
+
+function TestFunction() {
+    document.getElementById("exercise-1-1").innerHTML = "Test method.";
+}
 
 //Exercise 1 - date and time written out
 
@@ -107,4 +112,29 @@ function GetFormattedDate3() {
     var day = date.getDate().toString();
     day = day.length > 1 ? day : '0' + day;
     return day + '/' + month + '/' + year;
+}
+
+//Exercise 3 functions
+
+function AddRowToEndOfTable() {
+    var table = document.getElementById("myTable");
+    var row = table.insertRow(-1);
+    var cell1 = row.insertCell(0);
+    var cell2 = row.insertCell(1);
+    cell1.innerHTML = "NEW CELL1";
+    cell2.innerHTML = "NEW CELL2";
+}
+
+//Exercise 4 functions
+
+function UpdateTableRow() {
+    var row = prompt("Please enter a row.", "1") - 1;
+    var column = prompt("Please enter a column", 1) - 1;
+    var string = prompt("Please enter the value you want to update this to.", "Type value here");
+
+        if (row != null || column != null || string != null) {
+            var x = document.getElementById("myTable2").rows[row].cells;
+            x[column].innerHTML = string;
+        }
+    
 }
