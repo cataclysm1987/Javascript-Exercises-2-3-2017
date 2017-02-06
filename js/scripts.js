@@ -70,3 +70,41 @@ function getHoursFormatted() {
     }
     return hours;
 }
+
+//Exercise 2 functions
+
+function Format3Dates() {
+    document.getElementById("exercise-2-1").innerHTML = GetFormattedDate1();
+    document.getElementById("exercise-2-2").innerHTML = GetFormattedDate2();
+    document.getElementById("exercise-2-3").innerHTML = GetFormattedDate3();
+}
+
+function GetFormattedDate1() {
+    var date = new Date();
+    var year = date.getFullYear();
+    var month = (1 + date.getMonth()).toString();
+    month = month.length > 1 ? month : '0' + month;
+    var day = date.getDate().toString();
+    day = day.length > 1 ? day : '0' + day;
+    return month + '-' + day + '-' + year;
+}
+
+function GetFormattedDate2() {
+    var date = new Date();
+    var year = date.getFullYear();
+    var month = (1 + date.getMonth()).toString();
+    month = month.length > 1 ? month : '0' + month;
+    var day = date.getDate().toString();
+    day = day.length > 1 ? day : '0' + day;
+    return month + '/' + day + '/' + year;
+}
+
+function GetFormattedDate3() {
+    var date = new Date();
+    var year = date.getFullYear();
+    var month = (1 + date.getMonth()).toString();
+    month = month.length > 1 ? month : '0' + month;
+    var day = date.getDate().toString();
+    day = day.length > 1 ? day : '0' + day;
+    return day + '/' + month + '/' + year;
+}
