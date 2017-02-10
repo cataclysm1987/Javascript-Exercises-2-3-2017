@@ -166,3 +166,13 @@ function NestedLoopTwo() {
     }
     document.getElementById("nested2").innerHTML = text;
 }
+
+//Jquery Methods
+
+function TestJQuery() {
+    if (typeof jQuery == 'undefined') {
+        document.getElementById("jquery-test").innerHTML = "JQuery was not found!";
+    } else {
+        document.getElementById("jquery-test").innerHTML = "JQuery was found!";
+    }
+}
