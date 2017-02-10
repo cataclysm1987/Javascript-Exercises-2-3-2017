@@ -28,3 +28,11 @@
     background-repeat: repeat;
     margin-top: -30px;
 }
+
+#source {
+    background-color: red;
+}
+
+#destination {
+    background-color: blue;
+}
