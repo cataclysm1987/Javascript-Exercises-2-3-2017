@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
 	<title>Javascript Exercises - 2-3-2017</title>
@@ -64,37 +64,16 @@
 		</table>
 	   
 		<h1>Write a JavaScript function to display the following pattern using a nested loop.</h1>
-		&nbsp;
+	    &nbsp;
+        <a href="" class="btn btn-primary" onclick="NestedLoopOne(); return false;">Click here to execute the function</a>
 		<p id ="nested1"></p>
-	    <script>
-            var text = "";
-            var i;
-            for (i = 10; i >= 1; i--) {
-                var count;
-                for (count = i; count <= 10; count++) {
-                    text += "*";
-                }
-                text += "<br>";
-            }
-            document.getElementById("nested1").innerHTML = text;
-    	</script>
+	    
 
 	    <h1>Write a JavaScript function to display the previous pattern using a nested loop, but in reverse.</h1>
 	    &nbsp;
+        <a href="" class="btn btn-primary" onclick="NestedLoopTwo(); return false;">Click here to execute the function</a>
         <p id ="nested2"></p>
-	    <script>
-            var text = "";
-            var i;
-            for (i = 1; i <= 10; i++) {
-                var count;
-                for (count = i; count <= 10; count++) {
-                    text += "*";
-                }
-                text += "<br>";
-            }
-            document.getElementById("nested2").innerHTML = text;
-
-    	</script>
+	    
 	</div>
 
 <!--Begin Javascript code here-->

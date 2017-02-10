@@ -138,3 +138,31 @@ function UpdateTableRow() {
         }
     
 }
+
+//Nested Loop Bonus Methods
+
+function NestedLoopOne() {
+    var text = "";
+    var i;
+    for (i = 10; i >= 1; i--) {
+        var count;
+        for (count = i; count <= 10; count++) {
+            text += "*";
+        }
+        text += "<br>";
+    }
+    document.getElementById("nested1").innerHTML = text;
+}
+
+function NestedLoopTwo() {
+    var text = "";
+    var i;
+    for (i = 1; i <= 10; i++) {
+        var count;
+        for (count = i; count <= 10; count++) {
+            text += "*";
+        }
+        text += "<br>";
+    }
+    document.getElementById("nested2").innerHTML = text;
+}
