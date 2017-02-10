@@ -183,3 +183,10 @@ function MoveDiv() {
     $("#source")
     .appendTo("#destination");
 }
+
+//Count child elements
+
+function CountChildElements() {
+    var count = $("#selected p").length;
+    document.getElementById("child-elements").innerHTML = count;
+}
