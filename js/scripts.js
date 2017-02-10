@@ -203,3 +203,7 @@ function RelativeAnimate() {
         width: '+=150px'
     });
 }
+
+function ChangeH1BackgroundColor() {
+    $('#background-color').find('h1').CSS("background-color: blue;");
+}
