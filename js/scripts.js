@@ -176,3 +176,10 @@ function TestJQuery() {
         document.getElementById("jquery-test").innerHTML = "JQuery was found!";
     }
 }
+
+//Move Div
+
+function MoveDiv() {
+    $("#source")
+    .appendTo("#destination");
+}
