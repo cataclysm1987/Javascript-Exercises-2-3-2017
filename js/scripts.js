@@ -55,7 +55,7 @@ function displayCurrentTimeFormatted() {
 
 function amOrPm() {
     var hours = new Date().getHours();
-    var hours = (hours + 24 - 2) % 24;
+    hours = (hours + 24 - 2) % 24;
     var mid = 'AM';
     if (hours == 0) { //At 00 hours we need to show 12 am
         hours = 12;
