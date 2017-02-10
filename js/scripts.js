@@ -192,6 +192,14 @@ function CountChildElements() {
 }
 
 function CountDivElements() {
-    var count = $('#count').children().length;
+    var count = $('#iddiv').children().length;
     document.getElementById("div-elements").innerHTML = count;
+}
+
+function RelativeAnimate() {
+    $(".block").animate({
+        left: '250px',
+        height: '+=150px',
+        width: '+=150px'
+    });
 }
