@@ -190,3 +190,8 @@ function CountChildElements() {
     var count = $("#selected p").length;
     document.getElementById("child-elements").innerHTML = count;
 }
+
+function CountDivElements() {
+    var count = $('#count').children().length;
+    document.getElementById("div-elements").innerHTML = count;
+}
