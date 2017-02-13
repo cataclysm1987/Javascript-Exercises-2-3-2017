@@ -205,5 +205,5 @@ function RelativeAnimate() {
 }
 
 function ChangeH1BackgroundColor() {
-    $('#background-color').find('h1').CSS("background-color: blue;");
+    $('#background-color').find('h1').css("background-color: blue;");
 }
